@@ -8,7 +8,7 @@ class Lift {
     this.safetyBar = 'up';
   }
   admitSkier(name, hasLiftTicket) {
-    var newSkier = new Skier(name, true);
+    var newSkier = new Skier(name, hasLiftTicket);
     if (this.skiers.length < this.limit && hasLiftTicket) {
       this.skiers.push(newSkier);
     } else if (!hasLiftTicket) {
